@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+    background: hsl(225, 100%, 98%);
+    background-image: url("/images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem
+}
+
+main {
+    background: #FFF;
+    max-width: 416px;
+    border-radius: 1rem;
+}
+
+main img {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+main section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2rem;
+    height: 100%;
+    width: 100%;
+}
+
+main section h1 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: hsl(223, 47%, 23%);
+}
+
+main section span {
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+}
+
+.informations {
+    background: hsl(225, 100%, 98%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 0.8rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.music-price {
+    display: flex;
+    align-items: center;
+}
+
+.music-price img {
+    width: 48px;
+    margin-right: 1rem;
+}
+
+.music-price .price {
+    display: flex;
+    flex-direction: column;
+}
+
+.music-price .price span{
+    color: hsl(224, 23%, 55%);
+}
+
+.informations a {
+    font-size: 14px;
+    color: hsl(245, 75%, 52%);
+    font-weight: 600;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.informations a:hover {
+    text-decoration: none;
+    color: hsl(223, 47%, 23%)
+}
+
+main button {
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 0.8rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    background: hsl(245, 75%, 52%);
+    color: #FFF;
+    border: none;
+    padding: 1rem 0;
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.2);
+    transition: background 0.3s;
+}
+
+main button:hover {
+    background: #766CF1;
+}
+
+main .btn-cancel {
+    text-decoration: none;
+    margin-bottom: 2rem;
+    color: hsl(224, 23%, 55%);
+    font-weight: 600;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+main .btn-cancel:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        background-image: url("/images/pattern-background-mobile.svg");
+    }
+}
